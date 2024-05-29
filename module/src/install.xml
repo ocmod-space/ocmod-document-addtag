@@ -5,11 +5,11 @@
 -->
 
 <modification>
-	<name>#ocmod.space: <insertvar>MODCODE</insertvar></name>
-	<code><insertvar>MODFILE</insertvar></code>
-	<version><insertvar>MODVERS</insertvar></version>
-	<author><insertvar>AUTHOR</insertvar></author>
-	<link><insertvar>XMLLINK</insertvar></link>
+    <name><insertvar>FULL_NAME</insertvar></name>
+    <code>XMLCODE</code>
+    <version><insertvar>VERSION</insertvar></version>
+    <author><insertvar>AUTHOR</insertvar></author>
+    <link><insertvar>XMLLINK</insertvar></link>
 
     <file path="system/library/document.php" error="log">
         <operation error="log">
@@ -17,7 +17,7 @@
 				<![CDATA[private $scripts = array();]]>
 			</search>
             <add position="after"><![CDATA[
-	/// << <insertvar>MODCODE</insertvar>
+	/// << <insertvar>FULL_NAME</insertvar>
 	private $tags = array();
 
 	/**
@@ -63,7 +63,7 @@
 			return array();
 		}
 	}
-	/// >> <insertvar>MODCODE</insertvar>]]>
+	/// >> <insertvar>FULL_NAME</insertvar>]]>
 			</add>
         </operation>
     </file>
