@@ -2,8 +2,7 @@ _inc
 doc
 pic
 src
-zip
+!zip
 *.code-workspace
 *.fclignore
 *.pwd
-pakdef.php
